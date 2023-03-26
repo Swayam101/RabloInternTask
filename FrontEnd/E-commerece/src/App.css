@@ -1,0 +1,45 @@
+.App {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.page-container {
+  grid-area: 2 / 1 / 5 / 6;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.navigation {
+  grid-area: 1 / 1 / 2 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  grid-area: 5 / 1 / 6 / 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-group {
+  width: 30vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.allProducts-container{
+  width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+
+
